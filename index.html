@@ -1,0 +1,140 @@
+<html>
+    <head>
+        <title>Marksheet Validate</title>
+        <link rel="stylesheet" href="style.css">
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <script src="script.js"></script>
+    </head>
+    <body>
+        <form action="" class="mainform" name="validform" onsubmit="return myFunction()">
+        <div class="heading1" id="heading">
+            <img id="image" class="center" src="/College Logo.PNG" alt="College Logo">
+            <p><strong>University of Mumbai</strong></p>
+            <p><strong>Bharati Vidyapeeth College Of Engineering,</strong></p>
+            <p><strong>Navi Mumbai 400614,Maharastra India</strong></p>
+        </div>
+        <hr>
+        <div class="formhead">
+            <form id="formhead1" action="" >
+                <fieldset>
+                <p id="gradehead" style="color: Blue;"><u>Marksheet Validation</u></p>
+                <table class="Userinput">
+                    <tr>
+                        <td><strong>Name:</strong></td>
+                        <td><input type="text" name="txtname" placeholder="Enter Name"></td>
+                    </tr>
+                    <tr>
+                        <td><strong>Semester:</strong></td>
+                        <td><input type="text" name="txtSemester" placeholder="semester"></td>
+                    </tr>
+                    <tr>
+                        <td><strong>Branch:</strong></td>
+                        <td><input type="text" name="txtBranch" placeholder="Branch Name"></td>
+                    </tr>
+                    <tr>
+                        <td><strong>Seat Number:</strong></td>
+                        <td><input type="tel" name="txtSeat" placeholder="Enter Seatnumber"></td>
+                    </tr>
+                </table>
+            </fieldset>
+                <fieldset>
+                    <table border="2" cellspacing="0" class="markinput">
+                        <tr >
+                           <th >Course-Code</th>
+                           <th>Course-Tittle</th>
+                           <th>Marks(100)</th>
+                        </tr>
+                        <tr>
+                            <td>ITC301</td>
+                            <td>E-Business:</td>
+                            <td heght="25"><input  type="text" name="etxt" maxlength="2" size="10"></td>   
+                        </tr>
+                        <tr>
+                            <td>ITC302</td>
+                            <td>Internet Programming:</td>
+                            <td><input type="text" name="Iptxt" maxlength="2" size="10"></td>   
+                        </tr>
+                        <tr>
+                            <td>ITC303</td>
+                            <td>Software Engineering:</td>
+                            <td><input type="text" name="Setxt" maxlength="2" size="10"></td>   
+                        </tr>
+                        <tr>
+                            <td>ITC304</td>
+                            <td>Mangement Technology:</td>
+                            <td><input type="text" name="Mttxt" maxlength="2" size="10"></td>   
+                        </tr>
+                        <tr>
+                            <td>ITC305</td>
+                            <td>Computer Security:</td>
+                            <td><input type="text" name="Cntxt" maxlength="2" size="10"></td>   
+                        </tr>
+                    </table>
+                </fieldset>
+                <div class="btn">
+                    <button type="button" onclick='myFunction()'>Submit</button>
+                    <button type="Reset">Reset</button>
+                </div>
+                <fieldset>
+                    <table border="2" cellspacing="0">
+                        <th colspan="2" style="color: blue;"><Strong>Student Information</Strong></th>
+                        <tr>
+                            <td><Strong>Name</Strong></td>
+                            <td width="500"><font id="name"></font></td>
+                        </tr>
+                        <tr>
+                            <td><Strong>Semester</Strong></td>
+                            <td><font id="sem"></font></td>
+                        </tr>
+                        <tr>
+                            <td><Strong>Branch</Strong></td>
+                            <td><font id="branch"></font></td>
+                        </tr>
+                        <tr>
+                            <td><Strong>Seatnumber</Strong></td>
+                            <td><font id="seat"></font></td>
+                        </tr>
+                     
+                        <th colspan="2" style="color: blue;"><Strong>Subjects Marks</Strong></th>
+                        <tr>
+                            <td><strong>E-Business</strong></td>
+                            <td><font id="eb"></font></td>
+                        </tr>
+                        <tr>
+                            <td><strong>Internet Programming</strong></td>
+                            <td><font id="ip"></font></td>
+                        </tr>
+                        <tr>
+                            <td><strong>Software Engineering</strong></td>
+                            <td><font id="se"></font></td>
+                        </tr>
+                        <tr>
+                            <td><strong>Management Technology</strong></td>
+                            <td><font id="mt"></font></td>
+                        </tr>
+                        <tr>
+                            <td><strong>Computer Security</strong></td>
+                            <td><font id="cns"></font></td>
+                        </tr>
+                        <th colspan="2" style="color: blue;"><strong>Marks Total</strong></th>
+                        <tr>
+                            <td><strong>Total</strong></td>
+                            <td><font id="total"></font></td>
+                        </tr>
+                        <tr>
+                            <td><strong>Percentage</strong></td>
+                            <td><font id="percentage"></font></td>
+                        </tr>
+                        <tr>
+                            <td><strong>Grade</strong></td>
+                            <td><font id="grade"></font></td>
+                        </tr>
+
+                    </table>
+                </fieldset>
+            </form>
+        </div>
+    </form>
+    </body>
+    
+</html>
