@@ -105,6 +105,7 @@ function myFunction(){
         break;
         case(percentage<40):
         document.getElementById("grade").innerHTML="Fail";
+        document.getElementById("grade").style.backgroundColor="red";
         break;
     }
 }
