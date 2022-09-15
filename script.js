@@ -14,6 +14,8 @@ function myFunction(){
     document.getElementById("u2eb").innerHTML=ebu2;
     let ebfinal=document.validform.ebfinal.value;
     document.getElementById("finaleb").innerHTML=ebfinal;
+    let ebtotal=eval((parseFloat(ebu1=document.validform.ebu1.value)+parseFloat(ebu2=document.validform.ebu2.value))/2+parseFloat(ebfinal=document.validform.ebfinal.value));
+    document.getElementById("totaleb").innerHTML=ebtotal;
 
     // Internet Programming
     let Ipu1=document.validform.Ipu1.value;
@@ -22,6 +24,8 @@ function myFunction(){
     document.getElementById("u2ip").innerHTML=Ipu2;
     let Ipfinal=document.validform.Ipfinal.value;
     document.getElementById("finalip").innerHTML=Ipfinal;
+    let iptotal=eval((parseFloat(document.validform.Ipu1.value)+parseFloat(document.validform.Ipu2.value))/2+parseFloat(document.validform.Ipfinal.value));
+    document.getElementById("totalip").innerHTML=iptotal;
 
     // Software Engineering
     let Seu1=document.validform.Seu1.value;
@@ -30,6 +34,8 @@ function myFunction(){
     document.getElementById("u2se").innerHTML=Seu2;
     let Sefinal=document.validform.Sefinal.value;
     document.getElementById("finalse").innerHTML=Sefinal;
+    let setotal=eval((parseFloat(document.validform.Seu1.value)+parseFloat(document.validform.Seu2.value))/2+parseFloat(document.validform.Sefinal.value))
+    document.getElementById("totalse").innerHTML=setotal;
 
 
     // Advance Technology Mnagement
@@ -39,6 +45,8 @@ function myFunction(){
     document.getElementById("u2mt").innerHTML=Mtu2;
     let Mtfinal=document.validform.Mtfinal.value;
     document.getElementById("finalmt").innerHTML=Mtfinal;
+    let mttotal=eval((parseFloat(document.validform.Mtu1.value)+parseFloat(document.validform.Mtu1.value))/2+parseFloat(document.validform.Mtfinal.value));
+    document.getElementById("totalmt").innerHTML=mttotal;
 
     // Computer Security Technology
     let Cnu1=document.validform.Cnu1.value;
@@ -47,29 +55,36 @@ function myFunction(){
     document.getElementById("u2cns").innerHTML=Cnu2;
     let Cnfinal=document.validform.Cnfinal.value;
     document.getElementById("finalcns").innerHTML=Cnfinal;
+    let cnstotal=eval((parseFloat(document.validform.Cnu1.value)+parseFloat(document.validform.Cnu1.value))/2+parseFloat(document.validform.Cnfinal.value));
+    document.getElementById("totalcns").innerHTML=cnstotal;
 
 
     // finding the total marks:
-    let total=eval(parseFloat(document.validform.etxt.value)+parseFloat(document.validform.Iptxt.value)+parseFloat(document.validform.Setxt.value)+parseFloat(document.validform.Mttxt.value)+parseFloat(document.validform.Cntxt.value));
-    document.getElementById("total").innerHTML=total;
+    let totalall=eval(cnstotal+mttotal+iptotal+ebtotal+setotal);
+    document.getElementById("total").innerHTML=totalall;
 
-    let percentage=eval(parseFloat(total*100)/500);
-    document.getElementById("percentage").innerHTML=percentage.toFixed(2)+"%";
+    let percentage=eval(parseFloat(totalall*100)/500);
+    document.getElementById("percentage").innerHTML=percentage.toFixed(2)+" %";
 
-    if(eb<33){
-        document.getElementById("eb").innerHTML=eb+"F";
+    if(ebfinal<33){
+        document.getElementById("finaleb").innerHTML=ebfinal+"F";
+        document.getElementById("finaleb").style.backgroundColor="red";
     }
-    if(ip<33){
-        document.getElementById("ip").innerHTML=ip+"F";
+    if(Ipfinal<33){
+        document.getElementById("finalip").innerHTML=Ipfinal+"F";
+        document.getElementById("finalip").style.backgroundColor="red";
     }
-    if(se<33){
-        document.getElementById("se").innerHTML=eb+"F";
+    if(Sefinal<33){
+        document.getElementById("finalse").innerHTML=Sefinal+"F";
+        document.getElementById("finalse").style.backgroundColor="red";
     }
-    if(mt<33){
-        document.getElementById("mt").innerHTML=eb+"F";
+    if(Mtfinal<33){
+        document.getElementById("finalmt").innerHTML=Mtfinal+"F";
+        document.getElementById("finalmt").style.backgroundColor="red";
     }
-    if(cns<33){
-        document.getElementById("cns").innerHTML=eb+"F";
+    if(Cnfinal<33){
+        document.getElementById("finalcns").innerHTML=Cnfinal+"F";
+        document.getElementById("finalcns").style.backgroundColor="red";
     }
 
     switch(true){
