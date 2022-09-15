@@ -86,6 +86,108 @@ function myFunction(){
         document.getElementById("finalcns").innerHTML=Cnfinal+"F";
         document.getElementById("finalcns").style.backgroundColor="red";
     }
+    // Grade for E-Business:
+    if(ebtotal>=80){
+        document.getElementById("gradeeb").innerHTML="O";
+    }
+    if(ebtotal>=70 && ebtotal<80){
+        document.getElementById("gradeeb").innerHTML="A";
+    }
+    if(ebtotal>=60 && ebtotal<70){
+        document.getElementById("gradeeb").innerHTML="B";
+    }
+    if(ebtotal>=50 && ebtotal<60){
+        document.getElementById("gradeeb").innerHTML="C";
+    }
+    if(ebtotal>=40 && ebtotal<50){
+        document.getElementById("gradeeb").innerHTML="D";
+    }
+    if(ebtotal<40 && ebtotal>=0){
+        document.getElementById("gradeeb").innerHTML="Fail";
+    }
+
+    // Ip Grade:
+    if(iptotal>=80){
+        document.getElementById("gradeip").innerHTML="O";
+    }
+    if(iptotal>=70 && iptotal<80){
+        document.getElementById("gradeip").innerHTML="A";
+    }
+    if(iptotal>=60 && iptotal<70){
+        document.getElementById("gradeip").innerHTML="B";
+    }
+    if(iptotal>=50 && iptotal<60){
+        document.getElementById("gradeip").innerHTML="C";
+    }
+    if(iptotal>=40 && iptotal<50){
+        document.getElementById("gradeip").innerHTML="D";
+    }
+    if(iptotal<40 && iptotal>=0){
+        document.getElementById("gradeip").innerHTML="Fail";
+    }
+
+    // Software Engineering Grade:
+    if(setotal>=80){
+        document.getElementById("gradese").innerHTML="O";
+    }
+    if(setotal>=70 && setotal<80){
+        document.getElementById("gradese").innerHTML="A";
+    }
+    if(setotal>=60 && setotal<70){
+        document.getElementById("gradese").innerHTML="B";
+    }
+    if(setotal<60 &&setotal>=50){
+        document.getElementById("gradese").innerHTML="C";
+    }
+    if(setotal>=40 && setotal<50){
+        document.getElementById("gradese").innerHTML="D";
+    }
+    if(setotal<40 && setotal>=0){
+        document.getElementById("gradese").innerHTML="Fail";
+    }
+
+    // Mangement Technology Grade:
+    if(mttotal>=80){
+        document.getElementById("grademt").innerHTML="O";
+    }
+    if(mttotal>=70 && mttotal<80){
+        document.getElementById("grademt").innerHTML="A";
+    }
+    if(mttotal>=60 && mttotal<70){
+        document.getElementById("grademt").innerHTML="B";
+    }
+    if(mttotal>=50 && mttotal<60){
+        document.getElementById("grademt").innerHTML="C";
+    }
+    if(mttotal>=40 && mttotal<50){
+        document.getElementById("grademt").innerHTML="D";
+    }
+    if(mttotal<40 && mttotal>=0){
+        document.getElementById("grademt").innerHTML="Fail";
+    }
+
+    // Computer Technology Grade:
+    if(cnstotal>=80){
+        document.getElementById("gradecns").innerHTML="O";
+    }
+    if(cnstotal>=70 && cnstotal<80){
+        document.getElementById("gradecns").innerHTML="A";
+    }
+    if(cnstotal>=60 && cnstotal<70){
+        document.getElementById("gradecns").innerHTML="B";
+    }
+    if(cnstotal>=50 && cnstotal<60){
+        document.getElementById("gradecns").innerHTML="C";
+    }
+    if(cnstotal>=40 && cnstotal<50){
+        document.getElementById("gradecns").innerHTML="D";
+    }
+    if(cnstotal<40 && cnstotal>=0){
+        document.getElementById("gradecns").innerHTML="Fail";
+    }
+    
+    
+   
 
     switch(true){
         case(percentage>=80):
