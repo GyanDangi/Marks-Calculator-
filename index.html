@@ -16,8 +16,8 @@
         <hr>
         <div class="formhead">
             <form id="formhead1" action="" >
-                <fieldset>
-                <p id="gradehead" style="color: Blue;"><u>Marksheet Validation</u></p>
+                <fieldset class="feild1">
+                <p id="gradehead"><u>Marksheet Validation</u></p>
                 <table class="Userinput">
                     <tr>
                         <td><strong>Name:</strong></td>
@@ -37,7 +37,7 @@
                     </tr>
                 </table>
             </fieldset>
-                <fieldset>
+                <fieldset class="feild2">
                     <table border="2" cellspacing="0" class="markinput">
                         <tr >
                            <th >Course-Code</th>
@@ -47,36 +47,36 @@
                            <th>Marks(100)</th>
                         </tr>
                         <tr>
-                            <td>ITC301</td>
-                            <td>E-Business:</td>
-                            <td height="25"><input  type="text" name="ebu1" maxlength="2" size="10"></td>   
+                            <td><b>ITC301</b></td>
+                            <td><b>E-Business</b></td>
+                            <td height="25"><input height="" type="text" name="ebu1" maxlength="2" size="10"></td>   
                             <td height="25"><input  type="text" name="ebu2" maxlength="2" size="10"></td>   
                             <td height="25"><input  type="text" name="ebfinal" maxlength="2" size="10"></td>   
                         </tr>
                         <tr>
-                            <td>ITC302</td>
-                            <td>Internet Programming:</td>
+                            <td><b>ITC302</b></td>
+                            <td><b>Internet Programming</b></td>
                             <td><input type="text" name="Ipu1" maxlength="2" size="10"></td>   
                             <td><input type="text" name="Ipu2" maxlength="2" size="10"></td>   
                             <td><input type="text" name="Ipfinal" maxlength="2" size="10"></td>   
                         </tr>
                         <tr>
-                            <td>ITC303</td>
-                            <td>Software Engineering:</td>
+                            <td><b>ITC303</b></td>
+                            <td><b>Software Engineering</b></td>
                             <td><input type="text" name="Seu1" maxlength="2" size="10"></td>   
                             <td><input type="text" name="Seu2" maxlength="2" size="10"></td>   
                             <td><input type="text" name="Sefinal" maxlength="2" size="10"></td>   
                         </tr>
                         <tr>
-                            <td>ITC304</td>
-                            <td>ADMT:</td>
+                            <td><b>ITC304</b></td>
+                            <td><b>Advanced Management Technology</b></td>
                             <td><input type="text" name="Mtu1" maxlength="2" size="10"></td>   
                             <td><input type="text" name="Mtu2" maxlength="2" size="10"></td>   
                             <td><input type="text" name="Mtfinal" maxlength="2" size="10"></td>   
                         </tr>
                         <tr>
-                            <td>ITC305</td>
-                            <td>Computer Security:</td>
+                            <td><b>ITC305</b></td>
+                            <td><b>Computer Security</b></td>
                             <td><input type="text" name="Cnu1" maxlength="2" size="10"></td>   
                             <td><input type="text" name="Cnu2" maxlength="2" size="10"></td>   
                             <td><input type="text" name="Cnfinal" maxlength="2" size="10"></td>   
@@ -87,9 +87,9 @@
                     <button type="button" onclick='myFunction()'>Submit</button>
                     <button type="Reset">Reset</button>
                 </div>
-                <fieldset>
-                    <table border="2" cellspacing="0">
-                        <th colspan="5" style="color: blue;"><Strong>Student Information</Strong></th>
+                <fieldset class="feild3">
+                    <table border="2" cellspacing="0" class="feild3table">
+                        <th colspan="5" id="studentinfo"><Strong>Student Information</Strong></th>
                         <tr>
                             <td><Strong>Name</Strong></td>
                             <td width="500" colspan="4"><font id="name"></font></td>
@@ -107,7 +107,7 @@
                             <td colspan="4"><font id="seat"></font></td>
                         </tr>
                      
-                        <th colspan="5" style="color: blue;"><Strong>Subjects Marks</Strong></th>
+                        <th colspan="5" id="submarks"><Strong>Subjects Marks</Strong></th>
                         <tr>
                             <th><Strong>Course Code:</Strong></th>
                             <th><strong>Subjects:</strong></th>
@@ -150,7 +150,7 @@
                             <td><font id="u2cns"></font></td>
                             <td><font id="finalcns"></font></td>
                         </tr>
-                        <th colspan="5" style="color: blue;"><strong>Marks Total</strong></th>
+                        <th colspan="5" ID="subtotal"><strong>Marks Total</strong></th>
                         <tr>
                             <td><strong>Total</strong></td>
                             <td colspan="5"><font id="total"></font></td>

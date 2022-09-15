@@ -7,37 +7,44 @@ body{
     margin-right: auto;
     /* width: 50%; */
   }
+  .heading1{
+    background-color: rgb(227, 239, 248);
+  }
  .heading1 p {
-    color: lightpink;
+    color: red;
     text-align: center;
     /* font-family: 'IM Fell English', serif; */
-    font-family: Georgia, 'Times New Roman', Times, serif;
-    font-size: large;
+    font-family: 'Poppins', sans-serif;
+    font-size: 25px;
     
 }
 
 body form{
    
-    padding: 10px 25px;
+    /* padding: 10px 25px; */
     border: 3px solid black;
     /* border-color: black; */
-    margin: 20px;
+    /* margin: 20px; */
     background-color: beige;
+    margin-left: 100px;
+    margin-right: 100px;
+    padding: 50px;
 }
 body .formhead{
-    margin-left: 250px;
-    margin-right: 200px;
-    /* width: 1000px; */
     align-items: center;
 }
+
 .formhead input{
     /* width: 300px; */
     height: 25px;
     border-radius: 3px;
+    border-color: black;
 }
-.formhead #gradehead{
-    text-align: center;
-    font-size: 25px;
+.feild1 #gradehead{
+    color: red;
+   font-size: 30px;
+   margin-left: 270px;
+   
 }
 body .userinput{
     /* padding-left: 30px; */
@@ -45,14 +52,45 @@ body .userinput{
     height: 50;
 }
 .userinput input{
-    width: 400px;
+    width: 660px;
     height: 33px;
+    background-color: rgb(227, 239, 248);
 }
+.feild1{
+    background-color: rgb(227, 239, 248);
+    margin-bottom: 5px;
+    padding: 25px;
+}
+.feild2{
+    background-color: rgb(227, 239, 248);
+    margin-bottom: 5px;
+    padding: 25px;
+}
+.feild3{
+    background-color: rgb(227, 239, 248);
+    padding: 25px;
+    width: 785px;
+    
+}
+.feild3table{
+    width: 787px;
+}
+.feild3 #studentinfo{
+    color: #f40a0a;
+    font-size: 25px;
+}
+.feild3 #submarks{
+    color: #f40a0a;
+    font-size: 25px;
+}
+.feild3 #subtotal{
+    color: #f40a0a;
+    font-size: 25px;
+}
+
+
 .btn{
     position: absolute;
-    top: 890px;
-    left: 855px;
-}
-fieldset{
-    padding: 30px;
+    top: 990px;
+    left: 960px;
 }
