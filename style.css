@@ -31,7 +31,7 @@ body .formhead{
     align-items: center;
 }
 .formhead input{
-    width: 300px;
+    /* width: 300px; */
     height: 25px;
     border-radius: 3px;
 }
@@ -40,12 +40,18 @@ body .formhead{
     font-size: 25px;
 }
 body .userinput{
-    padding-left: 30px;
+    /* padding-left: 30px; */
+    /* width: 400px; */
+    height: 50;
+}
+.userinput input{
+    width: 400px;
+    height: 33px;
 }
 .btn{
     position: absolute;
-    top: 875px;
-    left: 885px;
+    top: 890px;
+    left: 855px;
 }
 fieldset{
     padding: 30px;
