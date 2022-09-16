@@ -71,12 +71,10 @@ body .userinput{
 .feild3{
     background-color: rgb(227, 239, 248);
     padding: 25px;
-    width: 785px;
+    /* width: 785px; */
     
 }
-.feild3table{
-    width: 787px;
-}
+
 .feild3 #studentinfo{
     color: #f40a0a;
     font-size: 25px;
@@ -92,7 +90,7 @@ body .userinput{
 
 
 .btn{
-    position: absolute;
+    /* position: fixed; */
     top: 990px;
-    left: 960px;
+    margin-left: 725px;
 }
