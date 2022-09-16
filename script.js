@@ -191,19 +191,19 @@ function myFunction(){
 
     switch(true){
         case(percentage>=80):
-        document.getElementById("grade").innerHTML="O";
+        document.getElementById("grade").innerHTML="Pass";
         break;
         case(percentage>=70):
-        document.getElementById("grade").innerHTML="A";
+        document.getElementById("grade").innerHTML="Pass";
         break;
         case(percentage>=60):
-        document.getElementById("grade").innerHTML="B";
+        document.getElementById("grade").innerHTML="Pass";
         break;
         case(percentage>=50):
-        document.getElementById("grade").innerHTML="C";
+        document.getElementById("grade").innerHTML="Pass";
         break;
         case(percentage>=40):
-        document.getElementById("grade").innerHTML="D";
+        document.getElementById("grade").innerHTML="Pass";
         break;
         case(percentage<40):
         document.getElementById("grade").innerHTML="Fail";
