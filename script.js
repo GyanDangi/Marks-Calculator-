@@ -65,6 +65,8 @@ function myFunction(){
 
     let percentage=eval(parseFloat(totalall*100)/500);
     document.getElementById("percentage").innerHTML=percentage.toFixed(2)+" %";
+    let cgpa=eval(percentage/9.5);
+    document.getElementById("cgpa").innerHTML=cgpa;
 
     if(ebfinal<33){
         document.getElementById("finaleb").innerHTML=ebfinal+"F";
