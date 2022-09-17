@@ -1,5 +1,11 @@
+*{
+    margin: auto;
+    padding: auto;
+    box-sizing: border-box;
+}
 body{
     margin: 100px;
+    /* background-color: aqua; */
 }
 .center {
     display: block;
@@ -9,6 +15,8 @@ body{
   }
   .heading1{
     background-color: rgb(227, 239, 248);
+    border-radius: 5px;
+    border: 2px solid grey;
   }
  .heading1 p {
     color:blue;
@@ -71,8 +79,13 @@ body .userinput{
 .feild3{
     background-color: rgb(227, 239, 248);
     padding: 25px;
-    /* width: 785px; */
+    /* width: 900px; */
     
+}
+.feild3 .feild3table{
+    /* margin-left: 100px; */
+    width: 785px;
+    box-sizing: border-box;
 }
 
 .feild3 #studentinfo{
