@@ -100,6 +100,10 @@ body .userinput{
     color: #f40a0a;
     font-size: 25px;
 }
+.feild3 td {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-weight: bolder;
+}
 
 
 .btn{
