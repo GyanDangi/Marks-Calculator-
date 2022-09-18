@@ -105,5 +105,15 @@ body .userinput{
 .btn{
     /* position: fixed; */
     top: 990px;
-    margin-left: 725px;
+    margin-left: 725px; 
+     box-sizing: border-box;
+}
+.btn button{
+  color: blue;
+  border-radius: 7px;
+}
+.btn button:hover{
+    background-color: rgb(255, 225, 0);
+    text-decoration: solid black;
+    text-decoration: red;
 }

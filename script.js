@@ -193,16 +193,45 @@ function myFunction(){
 
     switch(true){
         case(percentage>=80):
-        document.getElementById("grade").innerHTML="Pass";
+        if(ebfinal<33 || Ipfinal<33 || Sefinal<33 || Cnfinal<33 ||Mtfinal<33){
+            document.getElementById("grade").innerHTML="Fail";
+            document.getElementById("grade").style.backgroundColor="red";
+        }
+        else{
+            document.getElementById("grade").innerHTML="Pass";
+            break;
+        }
         break;
         case(percentage>=70):
-        document.getElementById("grade").innerHTML="Pass";
+        
+        if(ebfinal<33 ||Ipfinal<33 || Sefinal<33 ||Cnfinal<33 ||Mtfinal<33){
+            document.getElementById("grade").innerHTML="Fail";
+            document.getElementById("grade").style.backgroundColor="red";
+        }
+        else{
+            document.getElementById("grade").innerHTML="Pass";
+            break;
+        }
         break;
         case(percentage>=60):
-        document.getElementById("grade").innerHTML="Pass";
+        if(ebfinal<33 || Ipfinal<33 || Sefinal<33 || Cnfinal<33 ||Mtfinal<33){
+            document.getElementById("grade").innerHTML="Fail";
+            document.getElementById("grade").style.backgroundColor="red";
+        }
+        else{
+            document.getElementById("grade").innerHTML="Pass";
+            break;
+        }
         break;
         case(percentage>=50):
-        document.getElementById("grade").innerHTML="Pass";
+        if(ebfinal<33 || Ipfinal<33 || Sefinal<33 || Cnfinal<33 ||Mtfinal<33){
+            document.getElementById("grade").innerHTML="Fail";
+            document.getElementById("grade").style.backgroundColor="red";
+        }
+        else{
+            document.getElementById("grade").innerHTML="Pass";
+            break;
+        }
         break;
         case(percentage>=40):
         document.getElementById("grade").innerHTML="Pass";
