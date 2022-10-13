@@ -52,7 +52,8 @@ body .formhead{
 .feild1 #gradehead{
     color: red;
    font-size: 30px;
-   margin-left: 270px;
+   text-align: center;
+   /* margin-left: 270px; */
    
 }
 body .userinput{
@@ -61,14 +62,16 @@ body .userinput{
     height: 50;
 }
 .userinput input{
-    width: 660px;
+   
     height: 33px;
     background-color: rgb(227, 239, 248);
 }
 .feild1{
+    margin-top: 5px;
     background-color: rgb(227, 239, 248);
     margin-bottom: 5px;
     padding: 25px;
+    border-radius: 3px;
    
 }
 .feild2{
@@ -84,7 +87,7 @@ body .userinput{
 }
 .feild3 .feild3table{
     /* margin-left: 100px; */
-    width: 785px;
+    /* width: 785px; */
     box-sizing: border-box;
 }
 
@@ -108,8 +111,9 @@ body .userinput{
 
 .btn{
     /* position: fixed; */
-    top: 990px;
-    margin-left: 725px; 
+    /* top: 990px;
+    margin-left: 725px;  */
+    float: right;
      box-sizing: border-box;
 }
 .btn button{
